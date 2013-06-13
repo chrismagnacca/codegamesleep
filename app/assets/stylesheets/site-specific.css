@@ -1,0 +1,58 @@
+html{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+body {
+    background-color: #dad9d4;
+}
+
+h1, h2, h3 {
+    font-weight: 100;
+    line-height: 0.75;
+}
+
+body {
+    font-size: 0.90em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    background-color: #dad9d4;
+}
+
+header, footer, nav, section {
+    display: block;
+}
+
+div#title-row {
+    padding-top: 5em;
+    padding-left: 2.5em;
+}
+
+div.line-break {
+    border-top: 1px solid #838f9f;
+}
+
+div#twitter-link a, div#github-link a, div#linkedin-link a {
+    text-decoration: none;
+}
+
+div.external-link {
+    min-width: 2.5em;
+}
+
+div#index-container {
+    max-width: 80em;
+    line-height: 0.75;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#footer-container {
+    max-width: 80em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#footer-text {
+    font-size: 0.80em;
+    text-align: center;
+}
