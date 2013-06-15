@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html ng-app='blog'>
 <head>
-  <title>Blog</title>
-
+  <title>Code, Game, Sleep</title>
+  <%= favicon_link_tag "/assets/favicon.ico" %>
   <%= stylesheet_link_tag    "http://fonts.googleapis.com/css?family=Roboto:400,100,700" %>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -11,7 +11,6 @@
 <body>
 
 <%= yield %>
-
 
 <div id="footer-container" ng-controller="FooterCtrl">
   <div class="container-fluid">

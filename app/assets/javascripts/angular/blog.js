@@ -9,6 +9,8 @@ blog.controller('PostsCtrl', ['$scope', 'Post', function ($scope, Post) {
     $scope.heading = 'Blog';
     $scope.posts = Post.query();
 
+
+
 }]);
 
 blog.factory('Post', ['$resource', function ($resource) {

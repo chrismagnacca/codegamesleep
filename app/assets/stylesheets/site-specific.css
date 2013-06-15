@@ -24,7 +24,6 @@ header, footer, nav, section {
 
 div#title-row {
     padding-top: 5em;
-    padding-left: 2.5em;
 }
 
 div.line-break {
@@ -36,6 +35,8 @@ div#twitter-link a, div#github-link a, div#linkedin-link a {
 }
 
 div.external-link {
+    margin-left: 0.313em !important;
+    margin-right: 0.313em !important;
     min-width: 2.5em;
 }
 
