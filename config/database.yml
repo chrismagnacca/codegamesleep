@@ -7,7 +7,7 @@ development:
   adapter: postgresql
   database: development_database
   host: localhost
-  username: postgres
+  username: superuser
   password: superuser
   pool: 5
   timeout: 5000
@@ -20,7 +20,7 @@ test:
   adapter: postgresql
   database: test_database
   host: localhost
-  username: postgres
+  username: superuser
   password: superuser
   pool: 5
   timeout: 5000
@@ -30,7 +30,7 @@ production:
   adapter: postgresql
   database: production_database
   host: localhost
-  username: postgres
+  username: superuser
   password: superuser
   pool: 5
   timeout: 5000

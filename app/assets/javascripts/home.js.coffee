@@ -3,5 +3,10 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 $ ->
   today = new Date();
-  $('#copyright').html('&copy; Christopher Michael Magnacca ' +  today.getFullYear());
-  $.get '/'
+  $('#copyright').html('&copy; Christopher Michael Magnacca ' +  today.getFullYear())
+  $.get '/home/new',
+        (data) ->
+            $('#post').html(data)
+  $.get '/home/post',
+        (data) ->
+            $('#post').attr('title', data.article)

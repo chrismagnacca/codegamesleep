@@ -3,6 +3,7 @@
 <head>
   <title>Code, Game, Sleep</title>
   <%= favicon_link_tag "/assets/favicon.ico" %>
+  <%= stylesheet_link_tag    "//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" %>
   <%= stylesheet_link_tag    "http://fonts.googleapis.com/css?family=Roboto:400,100,700" %>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -11,6 +12,22 @@
 <body>
 
 <%= yield %>
+
+<div id="newer-older-container" class="hidden-phone">
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span3"></div>
+      <div id="newer" class="span1">
+        newer
+      </div>
+      <div class="span4"></div>
+      <div id="older" class="span1">
+        older
+      </div>
+      <div class="span3"></div>
+    </div>
+  </div>
+</div>
 
 <div id="footer-container">
   <div class="container-fluid">
