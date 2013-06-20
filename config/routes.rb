@@ -1,6 +1,7 @@
 Blog::Application.routes.draw do
   get 'home/new'
   get 'home/post'
+  get 'home/title'
   get 'home/index'
   get 'home/newer'
   get 'home/older'

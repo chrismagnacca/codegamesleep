@@ -9,8 +9,12 @@ class HomeController < ApplicationController
     render newest_post, :formats => [:html], :handlers => :erb, :layout => false
   end
 
-  def post
+  def title
     render :json => {:article => newest_post}
+  end
+
+  def post
+
   end
 
   def newer(post)

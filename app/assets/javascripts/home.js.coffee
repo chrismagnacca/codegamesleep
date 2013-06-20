@@ -7,6 +7,6 @@ $ ->
   $.get '/home/new',
         (data) ->
             $('#post').html(data)
-  $.get '/home/post',
+  $.get '/home/title',
         (data) ->
             $('#post').attr('title', data.article)
