@@ -1,0 +1,27 @@
+<% @posts.each do |post| %>
+<div id="post-container">
+  <div class="row-fluid">
+    <div class="span2"></div>
+    <div class="span8">
+      <div id="post">
+        <!-- post placeholder -->
+        <h3 id="post-title">
+          <%= post[:title] %>
+        </h3>
+        <div id="post-date">
+          <%= post[:date] %>
+        </div>
+        <div class="half-line-break"></div>
+        <p class="indent" id="post-content">
+          <%= post[:body] %>
+        </p>
+        <!-- post placeholder -->
+      </div>
+    </div>
+    <div class="span2"></div>
+  </div>
+</div>
+<% end %>
+
+
+

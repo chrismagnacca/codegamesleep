@@ -4,9 +4,3 @@
 $ ->
   today = new Date();
   $('#copyright').html('&copy; Christopher Michael Magnacca ' +  today.getFullYear())
-  $.get '/home/new',
-        (data) ->
-            $('#post').html(data)
-  $.get '/home/title',
-        (data) ->
-            $('#post').attr('title', data.article)
