@@ -2,10 +2,15 @@
 <html>
 <head>
   <title>Code, Game, Sleep</title>
+  <!-- media query meta tag(s) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bookmark icon -->
   <%= favicon_link_tag "/assets/favicon.ico" %>
+  <!-- stylesheets -->
   <%= stylesheet_link_tag    "//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" %>
   <%= stylesheet_link_tag    "http://fonts.googleapis.com/css?family=Roboto:400,100,700" %>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <!-- javascripts -->
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
@@ -13,6 +18,10 @@
 
 <div id="index-container">
   <div class="container-fluid">
+
+    <!-- about, archive, work -->
+    <%= render 'shared/about' %>
+
     <div class="row-fluid" id="title-row">
       <div class="span12">
         <div class="row-fluid">

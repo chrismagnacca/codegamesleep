@@ -1,0 +1,11 @@
+I have been wanting to get a blog going for some time now and I could never get around to starting. I had a lot of ideas floating around my head, yet for one reason or another I could not get myself to commit. Through some reflection, I realized that I was in a similar situation the first time that I signed up on GitHub.
+
+I was disillusioned that through putting myself (& code) out there, I would immediately open myself to criticism. I recalled the nervousness of that first commit, that first push, putting a part of myself out there for anyone to see. I had held off on writing software in my free time, simply because I was nervous. In a strange coincidence I now find myself placing the application for my blog on GitHub.
+
+I digress.
+
+I decided earlier this year that I was going to push myself to complete some of the ideas that I had floating around in my head; It is my hope that this blog becomes the embodiment of that decision. I plan on writing about a variety of topics from software to video games and computer hardware. By writing about what I am working on, I hope that it will keep me working on ideas that I am passionate about.
+
+I was recently asked how I can work for 8+ hours a day and continue writing code when I am done with the day job. It struck me that I never consider it work; It is part of who I am. I am sure that many of my fellow programmers can attest to feeling the same way.
+
+The hardest part for me was getting over my own insecurities. Here's to the start of learning something new.

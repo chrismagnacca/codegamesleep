@@ -1,8 +1,9 @@
+<!-- render each post -->
 <% @posts.each do |post| %>
 <div id="post-container">
   <div class="row-fluid">
-    <div class="span2"></div>
-    <div class="span8">
+    <div class="span3"></div>
+    <div class="span6">
       <div id="post">
         <!-- post placeholder -->
         <h3 id="post-title">
@@ -13,15 +14,12 @@
         </div>
         <div class="half-line-break"></div>
         <p class="indent" id="post-content">
-          <%= post[:body] %>
+          <%= simple_format(post[:body]) %>
         </p>
         <!-- post placeholder -->
       </div>
     </div>
-    <div class="span2"></div>
+    <div class="span3"></div>
   </div>
 </div>
 <% end %>
-
-
-

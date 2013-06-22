@@ -1,7 +1,4 @@
 Blog::Application.routes.draw do
-  get 'home/index'
-
-  get 'posts/show'
   get 'posts/index'
 
   # The priority is based upon order of creation:

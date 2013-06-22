@@ -3,4 +3,4 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 $ ->
   today = new Date();
-  $('#copyright').html('&copy; Christopher Michael Magnacca ' +  today.getFullYear())
+  $("#copyright").html("&copy; Christopher Michael Magnacca " +  today.getFullYear())
