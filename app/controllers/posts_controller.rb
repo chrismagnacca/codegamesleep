@@ -2,11 +2,16 @@ class PostsController < ApplicationController
   include PostsHelper
 
   def index
-    @posts = Post.all
+    @posts = Post.friendly_id.find(:all)
+  end
 
-    respond_to do |format|
-      format.html # index.html.erb
+  def show
+    @post = Post.friendly_id.find(params[:id])
+
+    if request.path != post_path(@post)
+      redirect_to @post, status: :moved_permanently
     end
+
   end
 
 end

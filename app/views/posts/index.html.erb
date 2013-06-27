@@ -1,25 +1,5 @@
 <!-- render each post -->
 <% @posts.each do |post| %>
-<div id="post-container">
-  <div class="row-fluid">
-    <div class="span3"></div>
-    <div class="span6">
-      <div id="post">
-        <!-- post placeholder -->
-        <h3 id="post-title">
-          <%= post[:title] %>
-        </h3>
-        <div id="post-date">
-          <%= post[:date] %>
-        </div>
-        <div class="half-line-break"></div>
-        <p class="indent" id="post-content">
-          <%= simple_format(post[:body]) %>
-        </p>
-        <!-- post placeholder -->
-      </div>
-    </div>
-    <div class="span3"></div>
-  </div>
-</div>
+    <!-- render single post -->
+    <%= render 'shared/post', post: post %>
 <% end %>

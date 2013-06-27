@@ -37,3 +37,6 @@ gem 'jquery-rails'
 
 # Twitter Bootstrap Rails
 gem 'twitter-bootstrap-rails'
+
+# Permalinks
+gem 'friendly_id'
