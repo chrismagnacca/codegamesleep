@@ -1,0 +1,7 @@
+I often find myself nit picking minute sections of the code as a new project starts. I would spend hours considering things such as Rails or Sinatra, Angular or Backbone, Bootstrap or 960gs, and the list goes on.
+
+In the end, all of this worry was nowhere near as important as just getting code written. By time boxing my decisions on these various frameworks, I found that I have been writing more code as well as gaining a clearer understanding for the underlying concepts.
+
+Well written software can always be refactored. Conversely, software has to exist to be able to be refactored. In sticking to my commitment to improve my software skills, I have learned more in the past few months of writing software than I have in a long time.
+
+The foundation only matters if you see an idea through to completion. I have learned (and continue to learn) that learning is writing & refactoring as much code as possible. It has improved my ability to make informed decisions as I continue onto the next big idea.
