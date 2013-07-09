@@ -28,6 +28,10 @@
         padding-bottom: 2.00em;
     }
 
+    ul#personal-info-container {
+        margin-left: 3.50em !important;
+    }
+
 }
 
 /* Landscape phone to portrait tablet */
@@ -49,6 +53,10 @@
     div#twitter-link, div#github-link, div#linkedin-link, div#youtube-link {
         display: inline-block;
         padding-bottom: 1em;
+    }
+
+    ul#personal-info-container {
+        margin-left: 3.50em;
     }
 
     [class*="span"], .uneditable-input[class*="span"], .row-fluid [class*="span"] {
