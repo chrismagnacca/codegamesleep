@@ -1,4 +1,6 @@
 Blog::Application.routes.draw do
+  get "projects/index"
+
   get 'posts/show'
   get 'posts/index'
   get 'about/index'
