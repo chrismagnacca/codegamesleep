@@ -1,8 +1,13 @@
 // Place all the styles related to the About controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-div#about-me h3 {
+div#about-info h3 {
   text-align: center;
   max-width: inherit;
   padding-bottom: 0.25em;
+}
+
+p#who-i-am-content, p#what-i-do-content, p#get-in-touch-content {
+  padding-bottom: 1.25em;
+  line-height: 1.5;
 }

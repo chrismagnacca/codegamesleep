@@ -1,10 +1,8 @@
 Blog::Application.routes.draw do
-  get "projects/index"
-
   get 'posts/show'
   get 'posts/index'
   get 'about/index'
-  get 'contact/index'
+  get 'projects/index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -63,6 +61,6 @@ Blog::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
   match '/posts/:id', to: 'posts#show'
-  match '/contact', to: 'contact#index'
   match '/about', to: 'about#index'
+  match '/projects', to: 'projects#index'
 end
