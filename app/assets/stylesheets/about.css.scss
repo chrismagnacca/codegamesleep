@@ -5,9 +5,33 @@ div#about-info h3 {
   text-align: center;
   max-width: inherit;
   padding-bottom: 0.25em;
+  padding-top: 1.5em;
 }
 
-p#who-i-am-content, p#what-i-do-content, p#get-in-touch-content {
+p#who-i-am-content, p.what-i-do-content, p#get-in-touch-content {
   padding-bottom: 1.25em;
   line-height: 1.5;
+  font-size: 1.05em;
+}
+
+span.bio-pic img {
+  max-width: 12.500em;
+  max-height: 11.000em;
+  text-align: right;
+  border-width: 0.125em;
+  border-style: solid;
+  border-radius: 0.313em;
+}
+
+div#bio-pic {
+  text-align: center;
+
+}
+
+div#email-link {
+  text-align: center;
+}
+
+div#phone-link {
+  text-align: center;
 }

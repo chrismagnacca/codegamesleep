@@ -18,7 +18,6 @@ p {
     font-weight: 400;
     line-height: 1.5em;
     text-indent:0.626em;
-    padding-top: 0.75em;
 }
 
 p.indent2x {
@@ -27,7 +26,7 @@ p.indent2x {
 }
 
 body {
-    font-size: 0.90em;
+    font-size: 1.0em;
     font-family: 'Roboto', 'Segoe UI', Verdana, Helvetica, sans-serif;
     background-color: #dad9d4;
 }
@@ -45,6 +44,15 @@ div.line-break {
     margin-left: auto;
     margin-right: auto;
     border-top: 1px solid #838f9f;
+}
+
+div.half-line-break {
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px dashed #838f9f;
+    padding-bottom: 0.625em;
 }
 
 div#twitter-link a, div#github-link a, div#linkedin-link a, div#youtube-link a {

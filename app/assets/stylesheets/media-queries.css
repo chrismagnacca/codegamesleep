@@ -32,6 +32,9 @@
         margin-left: 3.50em !important;
     }
 
+    p.indent2x {
+        padding-left: 2.75em;
+    }
 }
 
 /* Landscape phone to portrait tablet */
@@ -63,6 +66,9 @@
         text-align: center;
     }
 
+    div#email-link {
+        padding-bottom: 0.5em;
+    }
 }
 
 /* Landscape phones and down */
@@ -88,5 +94,9 @@
 
     [class*="span"], .uneditable-input[class*="span"], .row-fluid [class*="span"] {
         text-align: center;
+    }
+
+    div#email-link {
+        padding-bottom: 0.5em;
     }
 }
