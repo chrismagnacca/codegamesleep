@@ -50,5 +50,7 @@
 <!-- footer/copyright -->
 <%= render 'shared/footer' %>
 
+<!-- google analytics -->
+<%= render 'shared/ga' if Rails.env == 'production' %>
 </body>
 </html>
