@@ -62,7 +62,6 @@ def index
 end
 </span>
 
-By adding .friendly_id before the .find in the PostsController, the returned url will be posts/:id where :id is the friendly_id defined in the model. I found this to be easier than implementing to_param inside of every model where I wanted friendly links.
-
+By adding .friendly_id before the .find in the PostsController, the returned url will be posts/:id where :id is the friendly_id defined in the model. I found this to be easier than implementing to_param inside of every model where I wanted to modify the link.
 
 
