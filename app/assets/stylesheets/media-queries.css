@@ -3,6 +3,17 @@
 
 }
 
+@media (min-width: 768px) and (max-width: 1040px) {
+    div#bio-text {
+        width: 100% !important;
+    }
+
+    div#bio-pic {
+        width: 100%;
+    }
+}
+
+
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
     body {
