@@ -1,0 +1,68 @@
+After creating the initial layout for this blog, I went in search of creating more descriptive perma-links for posts.
+
+I ran across <a href='https://github.com/FriendlyId/friendly_id/'>Friendly Id</a> on GitHub and decided to go that route after reading through the readme.
+
+To update my application with friendly perma-links, it took very minor modifications.
+
+After including the gem in your Gemfile, you will need to create a table to contain the friendly id text for your links. I have included the two tables below for my Posts example.
+
+<br />
+Creating the Posts Table, with a Slug column
+<span class='source-code'>
+class CreatePosts < ActiveRecord::Migration
+&nbsp;def change
+&nbsp;&nbsp;create_table :posts do |t|
+&nbsp;&nbsp;&nbsp;t.string :title
+&nbsp;&nbsp;&nbsp;t.date :date
+&nbsp;&nbsp;&nbsp;t.text :body
+&nbsp;&nbsp;&nbsp;t.string :slug
+&nbsp;&nbsp;&nbsp;t.timestamps
+&nbsp;&nbsp;&nbsp;end
+&nbsp;&nbsp;&nbsp;add_index :posts, :slug, unique: true
+&nbsp;&nbsp;end
+end
+</span>
+
+<br />
+Creating the FriendlyIdSlugs Table
+<span class='source-code'>
+class CreateFriendlyIdSlugs < ActiveRecord::Migration
+&nbsp;def self.up
+&nbsp;&nbsp;create_table :friendly_id_slugs do |t|
+&nbsp;&nbsp;&nbsp;t.string   :slug,           :null => false
+&nbsp;&nbsp;&nbsp;t.integer  :sluggable_id,   :null => false
+&nbsp;&nbsp;&nbsp;t.string   :sluggable_type, :limit => 40
+&nbsp;&nbsp;&nbsp;t.datetime :created_at
+&nbsp;&nbsp;end
+&nbsp;&nbsp;add_index :friendly_id_slugs, :sluggable_id
+&nbsp;&nbsp;add_index :friendly_id_slugs, [:slug, :sluggable_type], :unique => true
+&nbsp;&nbsp;add_index :friendly_id_slugs, :sluggable_type
+&nbsp;end
+&nbsp;def self.down
+&nbsp;&nbsp;drop_table :friendly_id_slugs
+&nbsp;end
+end
+</span>
+
+<br />
+Once this is in place, tell your model which column to use for the friendly perma-link by including a friendly_id attribute.
+<span class='source-code'>
+class Post < ActiveRecord::Base
+&nbsp;extend FriendlyId
+&nbsp;friendly_id :title, use: [:slugged, :history]
+&nbsp;attr_accessible :body, :date, :title
+end
+</span>
+
+<br />
+Lastly, update the related controller methods to return friendly_id versions of their data by changing the methods to include friendly_id on the return.
+<span class='source-code'>
+def index
+&nbsp;@posts = Post.friendly_id.find(:all, :order => 'date DESC')
+end
+</span>
+
+By adding .friendly_id before the .find in the PostsController, the returned url will be posts/:id where :id is the friendly_id defined in the model. I found this to be easier than implementing to_param inside of every model where I wanted friendly links.
+
+
+
