@@ -46,6 +46,12 @@
     p.indent2x {
         padding-left: 2.75em;
     }
+
+    pre {
+        font-size: 0.75em !important;
+        line-height: 1em !important;
+        text-align: left !important;
+    }
 }
 
 /* Landscape phone to portrait tablet */
@@ -80,6 +86,12 @@
     div#email-link {
         padding-bottom: 0.5em;
     }
+
+    pre {
+        font-size: 0.75em !important;
+        line-height: 1em !important;
+        text-align: left !important;
+    }
 }
 
 /* Landscape phones and down */
@@ -109,5 +121,11 @@
 
     div#email-link {
         padding-bottom: 0.5em;
+    }
+
+    pre {
+        font-size: 0.75em !important;
+        line-height: 1em !important;
+        text-align: left !important;
     }
 }
