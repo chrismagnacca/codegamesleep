@@ -1,0 +1,53 @@
+#contact-info-container
+  .row-fluid
+    .span3
+    .span6
+      #about-info
+
+        %h3#who-i-am
+          Who I Am
+        .half-line-break
+        .row-fluid
+          .span5#bio-pic
+            %span.bio-pic
+              = image_tag 'bio.png'
+          .span7#bio-text
+            %p.indent2x#who-i-am-content
+              I am a Software Developer enjoying life in New Albany, Ohio.
+              I enjoy writing software, playing video games, and anything computer hardware related.
+              Nothing drives me more than the desire to learn new technologies.
+
+        %h3#what-i-do
+          What I Do
+        .half-line-break
+        %p.indent2x.what-i-do-content
+          Apps, Websites, Testing! I enjoy writing quality, test-driven software in Ruby on Rails.
+          I also have experience test-driving C# in ASP.NET MVC using a variety of testing tools.
+          I am a strong proponent of Git and all of my personal code, this blog included, can be found on
+          %a{href:'http://www.github.com/chrismagnacca/'}GitHub
+
+        %p.indent2x.what-i-do-content
+          Custom built PCs are a hobby of mine as well.
+          I have built a variety of machines ranging from servers, gaming rigs, and hackintosh systems.
+          In need of a new machine but don't know where to start?
+          I am always interested in getting quality hardware together at the best possible price.
+
+        %h3#get-in-touch
+          Get In Touch
+        .half-line-break
+        .row-fluid
+          .span12
+            %p.indent2x#get-in-touch-content
+              New app ideas? In need of a custom computer? Get in touch and let's discuss your latest and greatest idea.
+        .row-fluid
+          .span6#email-link
+            = link_to 'mailto:chris.magnacca@gmail.com' do
+              %i.icon-envelope-alt.icon-3x
+            %br
+            = link_to 'chris.magnacca@gmail.com', 'mailto:chris.magnacca@gmail.com'
+          .span6#phone-link
+            = link_to 'tel:16143138887' do
+              %i.icon-phone.icon-3x
+            %br
+            =link_to '614.313.8887', 'tel:16143138887'
+    .span3

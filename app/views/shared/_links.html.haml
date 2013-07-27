@@ -1,0 +1,13 @@
+.row-fluid
+  .span12
+    .row-fluid#personal-info-container
+      -# about, archive, work
+      %ul#personal-info-container
+        %li
+          = link_to 'Home', '/'
+          \/
+        %li
+          =link_to 'Projects', {controller: 'projects', action: 'index'}, id: 'current-projects-link'
+          \/
+        %li
+          =link_to 'About Me', {controller: 'about', action: 'index'}, id: 'contact-info-link'

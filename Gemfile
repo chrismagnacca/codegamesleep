@@ -40,3 +40,5 @@ gem 'twitter-bootstrap-rails'
 
 # Permalinks
 gem 'friendly_id'
+
+gem 'haml'

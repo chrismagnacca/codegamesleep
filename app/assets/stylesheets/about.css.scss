@@ -29,9 +29,14 @@ div#bio-pic {
 }
 
 div#email-link {
+  text-decoration: none;
   text-align: center;
 }
 
 div#phone-link {
   text-align: center;
+}
+
+a:hover {
+  text-decoration: none;
 }

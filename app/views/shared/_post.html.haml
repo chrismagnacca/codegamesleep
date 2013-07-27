@@ -1,0 +1,15 @@
+#post-container
+  .row-fluid
+    .span3
+    .span6
+      #post
+        -# post placeholder
+        %h3#post-title
+          = link_to post[:title], "/posts/#{post[:slug]}"
+        #post-date
+          = post[:date]
+        .half-line-break
+        %p.indent#post-content
+          = simple_format(post[:body])
+        -# post placeholder
+    .span3

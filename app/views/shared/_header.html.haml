@@ -1,0 +1,36 @@
+-# title
+.span6
+  %h1#title='Code, Game, Sleep'
+
+-# desktop external links
+.span6.hidden-phone.hidden-tablet#desktop-links
+  .row-fluid
+    .span3.external-link.pull-right#youtube-link
+      = link_to 'http://www.youtube.com/codegamesleep/' do
+        %i.icon-youtube-sign.icon-3x
+    .span3.external-link.pull-right#linkedin-link
+      = link_to 'http://www.linkedin.com/pub/chris-magnacca/23/380/243/' do
+        %i.icon-linkedin-sign.icon-3x
+    .span3.external-link.pull-right#twitter-link
+      = link_to 'http://www.twitter.com/chrismagnacca/' do
+        %i.icon-twitter-sign.icon-3x
+    .span3.external-link.pull-right#github-link
+      = link_to 'http://www.github.com/chrismagnacca/' do
+        %i.icon-github-sign.icon-3x
+
+-# mobile external links
+.span6.hidden-desktop#mobile-links
+  .row-fluid
+    .span6.pull-right
+      .span3.external-link#github-link
+        = link_to 'http://www.github.com/chrismagnacca/' do
+          %i.icon-github-sign.icon-3x
+      .span3.external-link#twitter-link
+        = link_to 'http://www.twitter.com/chrismagnacca/' do
+          %i.icon-twitter-sign.icon-3x
+      .span3.external-link#linkedin-link
+        = link_to 'http://www.linkedin.com/pub/chris-magnacca/23/380/243/' do
+          %i.icon-linkedin-sign.icon-3x
+      .span3.external-link#youtube-link
+        = link_to 'http://www.youtube.com/codegamesleep/' do
+          %i.icon-youtube-sign.icon-3x
