@@ -4,3 +4,9 @@
 $ ->
   today = new Date();
   $("#copyright").html("&copy; Christopher Michael Magnacca " +  today.getFullYear())
+
+  $('img.small-pic').on click: ->
+    $('#image-content').attr('src', $(@).attr('src'))
+    $('#image-modal').modal('show')
+
+

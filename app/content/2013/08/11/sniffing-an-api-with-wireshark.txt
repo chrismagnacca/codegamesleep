@@ -1,0 +1,18 @@
+If you know me, you know that I am a huge fan of newegg.com for anything computer hardware related. I have wanted access to the product information for awhile now to not only use in other applications, but to make a programmatic way to search through hardware rather than merely using the web interface provided by Newegg.
+
+I decided a good first step was to figure out if there is an API that Newegg utilizes to service their web and mobile user interfaces. To accomplish this,
+
+After poking around in Chrome's developer tools, I looked through the traffic and couldn't discern too much as there is a lot going on within the desktop website.
+
+<img style="cursor: pointer;" class="small-pic" src="/assets/chrome-capture.png">
+
+
+I decided a better idea would be to point my iPhone at the proxy and track the activity from the mobile application.
+
+I first setup SquidMan (http://squidman.net/squidman/) to act as a proxy for my iPhone so that I could run a Wireshark capture on the traffic. Next, I set my iPhone to use my MacBook Air as the proxy. (picture)
+
+Once this was all setup, I simply opened the Newegg Mobile application and began poking around to see what would I could find. (picture)
+
+Through some analysis I determined the root url for Newegg's JSON API and by navigation through the mobile application noticed a pattern. It was through this pattern that I was able to extract the necessary entry points to be able to use the API that I have defined in the RubyGem's readme.
+
+I have abstracted basic calls to the API out into the gem and it is currently only on my GitHub account as I have not hosted it on rubygems yet. As far as the application idea that sparked the creation of the gem, I will hopefully have something out soon.

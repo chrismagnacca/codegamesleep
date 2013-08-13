@@ -20,9 +20,21 @@ p span.source-code {
   font-family: 'Source Code Pro', 'Segoe UI', sans-serif;
 }
 
+div#post {
+  padding-bottom: 5em;
+}
+
 pre {
   background-color: #dad9d4;
   border: none;
   line-height: 0.625em;
   font-size: 0.80em;
+}
+
+img.small-pic {
+  max-width: 12.500em;
+  max-height: 11.000em;
+  text-align: center;
+  border-radius: 0.313em;
+  cursor: pointer;
 }
