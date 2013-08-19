@@ -1,22 +1,10 @@
 I've been learning my way through Backbone.JS lately and like anything new I am learning by implementing something already familiar, in this case a simple google map.
 
-To render a Google Map in your application using Backbone.JS, first you'll need to make sure the Google Maps API is included.
-
-<br />
-<pre>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key={API_KEY}&sensor={SET_TO_TRUE_OR_FALSE}"></script>
-</pre>
+To render a Google Map in your application using Backbone.JS, first you'll need to make sure the Google Maps API is included by included the script using the recommended way for the version of their API that you are targeting.
 
 Next, the view I used to generate and render the Google Map was relatively straightforward. In my case, I am rendering the Google Map to the div with the id 'map'. One thing to note is that the API requires an explicit width and height on the container for the map.
 
-<span class='source-code'>
-<pre>
-<div id='map' style='width: 800px; height: 600px;'></div>
-</pre>
-</span>
-
 <br />
-
 Google Map View
 <span class='source-code'>
 <pre>
@@ -64,7 +52,6 @@ window.views.GoogleMapView = Backbone.View.extend({
 });
 </pre>
 </span>
-<br />
 
 Now that all that is taken care of, all you need to do is render an instance of your view to get the map on your page. This can be done in your Backbone router as usual.
 
