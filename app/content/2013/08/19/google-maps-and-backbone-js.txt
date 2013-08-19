@@ -1,0 +1,71 @@
+I've been learning my way through Backbone.JS lately and like anything new I am learning by implementing something already familiar, in this case a simple google map.
+
+To render a Google Map in your application using Backbone.JS, first you'll need to make sure the Google Maps API is included.
+
+<br />
+<pre>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key={API_KEY}&sensor={SET_TO_TRUE_OR_FALSE}"></script>
+</pre>
+
+Next, the view I used to generate and render the Google Map was relatively straightforward. In my case, I am rendering the Google Map to the div with the id 'map'. One thing to note is that the API requires an explicit width and height on the container for the map.
+
+<span class='source-code'>
+<pre>
+<div id='map' style='width: 800px; height: 600px;'></div>
+</pre>
+</span>
+
+<br />
+
+Google Map View
+<span class='source-code'>
+<pre>
+window.views.GoogleMapView = Backbone.View.extend({
+  id: 'map',
+
+  mapOptions: {
+    zoom: 12,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    center: new google.maps.LatLng(39.961201,-82.999491)
+  },
+
+  initialize: function() {
+    var self = this;
+
+    // utilize Geolocation for initial map center
+    if(navigator.geolocation) {
+      browserSupportFlag = true;
+      navigator.geolocation.getCurrentPosition(function(position) {
+        initialLocation = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
+        self.googleMap.setCenter(initialLocation);
+      }, function() {
+        this.handleNoGeolocation(browserSupportFlag);
+      });
+    } else {
+      browserSupportFlag = false;
+      this.handleNoGeolocation(browserSupportFlag);
+    }
+
+    this.render
+  },
+
+  handleNoGeolocation: function(errorFlag) {
+    if (errorFlag == true) {
+      alert("Geolocation service failed");
+    } else {
+      alert("Your browser doesn't support Geolocation");
+    }
+    this.googleMap.setCenter(this.MapOptions.center);
+  }
+
+  render: function() {
+    return this;
+  }
+});
+</pre>
+</span>
+<br />
+
+Now that all that is taken care of, all you need to do is render an instance of your view to get the map on your page. This can be done in your Backbone router as usual.
+
+Other behavior is relatively simple to build in as well, by listening to various events on the google map itself.
