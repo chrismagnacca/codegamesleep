@@ -41,4 +41,8 @@ gem 'twitter-bootstrap-rails'
 # Permalinks
 gem 'friendly_id'
 
+gem 'will_paginate', '~>3.0'
+
+gem 'pry'
+
 gem 'haml'
