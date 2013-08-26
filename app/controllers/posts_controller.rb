@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   include PostsHelper
 
   def index
-    @posts = Post.friendly_id.find(:all, :order => 'date DESC').paginate(page: 1, per_page: 2)
+    @posts = Post.friendly_id.order('date DESC').page(params[:page]).per(5)
   end
 
   def show

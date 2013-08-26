@@ -38,10 +38,10 @@ gem 'jquery-rails'
 # Twitter Bootstrap Rails
 gem 'twitter-bootstrap-rails'
 
-# Permalinks
+# Perma-links
 gem 'friendly_id'
 
-gem 'will_paginate', '~>3.0'
+gem 'kaminari'
 
 gem 'pry'
 

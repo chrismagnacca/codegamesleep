@@ -4,8 +4,9 @@
   %title= 'Code, Game, Sleep'
   -# media query meta tag(s)
   %meta{name: 'viewport', content: 'width=device-width, initial-scale=1.0'}
-  -# bookmark icon
-  = favicon_link_tag
+  -# bookmark icon, includes firefox patch
+  %link(rel="icon" href="favicon.ico" type="image/x-icon")
+  %link(rel="shortcut icon" href="favicon.ico" type="image/x-icon")
   -# stylesheets
   = stylesheet_link_tag '//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'
   = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Roboto:100,200,400,700'

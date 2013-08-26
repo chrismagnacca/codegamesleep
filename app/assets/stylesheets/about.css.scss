@@ -40,3 +40,16 @@ div#phone-link {
 a:hover {
   text-decoration: none;
 }
+
+ul#personal-info-container {
+  vertical-align: super;
+  margin-top: -2.00em;
+  margin-left: 0;
+  font-size: 90%;
+  width: 100%;
+}
+
+ul#personal-info-container li {
+  list-style-type: none;
+  display: inline;
+}
